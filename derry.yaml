@@ -1,3 +1,7 @@
+# This file is used to define scripts that can be run using the derry CLI
+
+buildRunner: fvm flutter packages pub run build_runner build
+buildRunnerRebuild: fvm flutter packages pub run build_runner build --delete-conflicting-outputs
 
 debugAndroidGradle:
   - cd android

@@ -10,6 +10,7 @@ linter:
     prefer_relative_imports: true
     unnecessary_statements: true
     use_super_parameters: true
+    library_private_types_in_public_api: false # mobX
 
 dart_code_metrics:
   metrics:

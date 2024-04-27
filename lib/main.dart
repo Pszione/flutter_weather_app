@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'src/features/features.dart';
 
 import 'src/core/core.dart';
+import 'src/features/home/presenter/dependencies_module.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,6 +22,15 @@ class WeatherApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Weather App',
+      //
+      navigatorKey: RouterSystem.navigatorKey,
+      scaffoldMessengerKey: RouterSystem.scaffoldMessengerKey,
+      builder: (context, child) => GlobalProviderComponent(
+        child: child ?? const ExamplePageScaffold(),
+      ),
+      initialRoute: '/',
+      onGenerateRoute: RouterSystem.onGenerateRoute,
+      //
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           brightness: Brightness.light,
@@ -28,7 +38,6 @@ class WeatherApp extends StatelessWidget {
         ).copyWith(background: const Color(0xFFE8F0F2)),
         useMaterial3: true,
       ),
-      home: const HomePage(),
     );
   }
 }

@@ -1,0 +1,4 @@
+
+debugAndroidGradle:
+  - cd android
+  - ./gradlew build --full-stacktrace

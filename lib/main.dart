@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 
-void main() {
+import 'src/core/core.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // debugRepaintRainbowEnabled = true;
+  // debugInvertOversizedImages = true;
+
+  await EnvironmentService.loadEnvironment();
+  // TODO: await Locator.initDependenciesLocator();
+
   runApp(const WeatherApp());
 }
 

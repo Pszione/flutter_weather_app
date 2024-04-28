@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../features/features.dart';
 import '../../features/home/presenter/dependencies_module.dart';
+import '../../features/sign_up/presenter/dependencies_module.dart';
 import '../core.dart';
 
 class RouterSystem {
@@ -33,18 +34,17 @@ class RouterSystem {
           builder: (_) => const HomeModule(child: HomePage()),
         );
 
-      // case SignInPage.route:
-      //   return MaterialPageRoute(
-      //       settings: RouteSettings(
-      //           name: '$SignInPage',
-      //           arguments: settings.arguments as SignInArguments),
-      //       builder: (_) => const SignInPage());
+      case SignInPage.name:
+        return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const SignInModule(child: SignInPage()));
       // case ForgotPasswordPage.route:
       //   return MaterialPageRoute(
       //       settings: settings, builder: (_) => const ForgotPasswordPage());
-      // case SignUpPage.route:
-      //   return MaterialPageRoute(
-      //       settings: settings, builder: (_) => const SignUpPage());
+      case SignUpPage.name:
+        return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const SignUpModule(child: SignUpPage()));
 
       ///
       default:

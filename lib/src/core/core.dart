@@ -1,4 +1,5 @@
 export 'constants/constants.dart';
+export 'dependencies/dependencies.dart';
 export 'global_providers/global_providers.dart';
 export 'helpers/helpers.dart';
 export 'interfaces/interfaces.dart';

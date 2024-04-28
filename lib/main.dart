@@ -10,7 +10,7 @@ void main() async {
   // debugInvertOversizedImages = true;
 
   await EnvironmentService.loadEnvironment();
-  // TODO: await Locator.initDependenciesLocator();
+  await DependenciesLocator.initLocator();
 
   runApp(const WeatherApp());
 }
@@ -21,7 +21,7 @@ class WeatherApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Weather App',
+      title: DependenciesLocator.appName,
       //
       navigatorKey: RouterSystem.navigatorKey,
       scaffoldMessengerKey: RouterSystem.scaffoldMessengerKey,

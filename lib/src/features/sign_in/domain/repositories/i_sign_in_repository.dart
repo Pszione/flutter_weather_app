@@ -1,7 +1,7 @@
 import '../../sign_in.dart';
 
 abstract class ISignInRepository {
-  Future<String> signInWithEmailAndPassword(SignInEntity signInEntity);
-  Future<String?> signInWithSocial(dynamic socialMedia);
-  Future<void> resetPassword(ForgotPasswordEntity forgotEntity);
+  Future<String> signInWithEmailAndPassword(SignInEntity entity);
+  Future<String?> signInWithSocial(dynamic entity);
+  Future<void> resetPassword(ForgotPasswordEntity entity);
 }

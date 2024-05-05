@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../features/features.dart';
-import '../../features/home/presenter/dependencies_module.dart';
 import '../../features/sign_up/presenter/dependencies_module.dart';
 import '../core.dart';
 

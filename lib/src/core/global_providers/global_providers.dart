@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../core.dart';
 
 class GlobalProviderComponent extends StatelessWidget {
   final Widget child;

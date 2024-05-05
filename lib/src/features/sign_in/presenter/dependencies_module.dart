@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/core.dart';
-import '../../features.dart';
 import 'controllers/sign_in_store.dart';
 
 class SignInModule extends StatelessWidget {

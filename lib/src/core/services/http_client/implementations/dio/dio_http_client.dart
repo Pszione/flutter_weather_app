@@ -24,7 +24,7 @@ class DioHttpClient implements IHttpClient {
     } on io.SocketException {
       // TODO: Handle this error
       rethrow;
-    } on DioException catch (e) {
+    } on DioException {
       // TODO: Handle this error
       rethrow;
     }
@@ -41,7 +41,7 @@ class DioHttpClient implements IHttpClient {
       return response.data;
     } on io.SocketException {
       rethrow;
-    } on DioException catch (e) {
+    } on DioException {
       rethrow;
     }
   }
@@ -53,7 +53,7 @@ class DioHttpClient implements IHttpClient {
       return response.data;
     } on io.SocketException {
       rethrow;
-    } on DioException catch (e) {
+    } on DioException {
       rethrow;
     }
   }
@@ -65,7 +65,7 @@ class DioHttpClient implements IHttpClient {
       return response.data;
     } on io.SocketException {
       rethrow;
-    } on DioException catch (e) {
+    } on DioException {
       rethrow;
     }
   }

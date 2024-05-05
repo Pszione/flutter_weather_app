@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'src/features/features.dart';
 
 import 'src/core/core.dart';
-import 'src/features/home/presenter/dependencies_module.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
